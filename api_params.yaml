@@ -1,12 +1,12 @@
 environments:
   - name: dev
     endpoints:
-      production:
-      sandbox:
+      production: https://localhost:9443/am/sample/pizzashack/v1/api/
+      sandbox: https://localhost:9443/am/sample/pizzashack/v1/api/
   - name: prod
     endpoints:
-      production:
-      sandbox:
+      production: https://localhost:9444/am/sample/pizzashack/v1/api/
+      sandbox: https://localhost:9444/am/sample/pizzashack/v1/api/
 
 deploy:
   import:
