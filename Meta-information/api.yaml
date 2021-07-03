@@ -1,0 +1,36 @@
+id:
+  providerName: admin
+  apiName: PizzaShackAPI
+  version: 1.0.0
+description: |
+  This is a RESTFul API for Pizza Shack online pizza delivery store.
+type: HTTP
+context: /pizzashack/1.0.0/1.0.0
+contextTemplate: /pizzashack/1.0.0/{version}
+availableTiers:
+- name: Unlimited
+status: CREATED
+visibility: public
+transports: http,https
+corsConfiguration:
+  corsConfigurationEnabled: true
+  accessControlAllowOrigins:
+  - '*'
+  accessControlAllowHeaders:
+  - authorization
+  - Access-Control-Allow-Origin
+  - Content-Type
+  - SOAPAction
+  - apikey
+  - testkey
+  - test
+  accessControlAllowMethods:
+  - GET
+  - PUT
+  - POST
+  - DELETE
+  - PATCH
+  - OPTIONS
+endpointConfig: '{"endpoint_type":"http","production_endpoints":{"url":"https://localhost:9443/am/sample/pizzashack/v1/api/"},"sandbox_endpoints":{"url":"https://localhost:9443/am/sample/pizzashack/v1/api/"}}'
+isDefaultVersion: true
+enableStore: true
